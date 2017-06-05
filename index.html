@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://danzera.github.io/hexo-blog"></form>
@@ -89,24 +89,20 @@
 <h2 id="Create-an-eslintrc-File"><a href="#Create-an-eslintrc-File" class="headerlink" title="Create an .eslintrc File"></a>Create an <em>.eslintrc</em> File</h2><p>In the root directory of your project, create a file named <em>.eslintrc</em> which is composed of a configuration object. Here is some sample code for the file:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"extends"</span>: [<span class="string">"plugin:angular/johnpapa"</span>, <span class="string">"eslint:recommended"</span>],</div><div class="line">  <span class="string">"env"</span>: &#123; <span class="comment">// indicates environment(s) where the code will be used</span></div><div class="line">    <span class="string">"browser"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="string">"node"</span>: <span class="literal">true</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"globals"</span>: &#123; <span class="comment">// global variables your script accesses during execution</span></div><div class="line">    <span class="string">"angular"</span>: <span class="literal">true</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"rules"</span>: &#123; <span class="comment">// extend (or override) specific rules</span></div><div class="line">    <span class="string">"no-unused-vars"</span>: <span class="string">"warn"</span>,</div><div class="line">    <span class="string">"quotes"</span>: [<span class="number">2</span>, <span class="string">"single"</span>],</div><div class="line">    <span class="string">"semi"</span>: [<span class="string">"warn"</span>, <span class="string">"always"</span>],</div><div class="line">    <span class="string">"no-console"</span>: [<span class="string">"warn"</span>, &#123;<span class="string">"allow"</span>: [<span class="string">"log"</span>, <span class="string">"warn"</span>, <span class="string">"error"</span>]&#125;],</div><div class="line">    <span class="string">"no-trailing-spaces"</span>: <span class="string">"error"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
-<li><p>“extends” can either be a string that specificies a configuration or an array of strings where each additional configuration extends the preceding configurations.</p>
-<ul>
+<li>“extends” can either be a string that specificies a configuration or an array of strings where each additional configuration extends the preceding configurations.<ul>
 <li>“plugin:angular/johnpapa” incorporates some rules from <a href="https://github.com/johnpapa/angular-styleguide/tree/master/a1" target="_blank" rel="external">John Papa’s AngularJS style guide</a>. However, the AngularJS Plugin can also be used <a href="https://www.npmjs.com/package/eslint-plugin-angular#usage-without-shareable-config" target="_blank" rel="external">without the shareable configuration</a>.</li>
 <li>No rules are enabled ‘out of the box’ with ESLint - “eslint:recommended” enables a subset of ESLint’s core rules that report common problems in JavaScript applications. Rules with check marks next to them in the <a href="http://eslint.org/docs/rules/" target="_blank" rel="external">rules section of the ESLint Documentation</a> indicate those that are enabled by this extension.</li>
 </ul>
 </li>
-<li><p>“env” indicates any environments in which the code will be run, which causes ESLint to allow a predetermined set of global variables specific to those environments.</p>
-</li>
-<li><p>“globals” speficies any additional global variables that your scripts access during execution</p>
-</li>
-<li><p>“rules” allows you to enable additional rules and extend, or override, the set of rules already specified from base configurations. The enforcement severity of rules can also be changed without changing their options. Additionally, you can write your own rules if you’re so inclined. See the ESLint documentation for the full skinny on <a href="http://eslint.org/docs/developer-guide/working-with-rules" target="_blank" rel="external">working with rules</a>.</p>
-</li>
+<li>“env” indicates any environments in which the code will be run, which causes ESLint to allow a predetermined set of global variables specific to those environments.</li>
+<li>“globals” speficies any additional global variables that your scripts access during execution</li>
+<li>“rules” allows you to enable additional rules and extend, or override, the set of rules already specified from base configurations. The enforcement severity of rules can also be changed without changing their options. Additionally, you can write your own rules if you’re so inclined. See the ESLint documentation for the full skinny on <a href="http://eslint.org/docs/developer-guide/working-with-rules" target="_blank" rel="external">working with rules</a>.</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://danzera.github.io/hexo-blog/2017/06/04/eslint-install/" data-id="cj3jlqhg90000zjlsvkjaffer" class="article-share-link">Partager</a>
+      <a data-url="https://danzera.github.io/hexo-blog/2017/06/04/eslint-install/" data-id="cj3jltsmh00003ilsqhzcvoka" class="article-share-link">Share</a>
       
       
     </footer>
@@ -151,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://danzera.github.io/hexo-blog/2017/06/04/hello-world/" data-id="cj3jlqhgd0001zjlsh29gihhv" class="article-share-link">Partager</a>
+      <a data-url="https://danzera.github.io/hexo-blog/2017/06/04/hello-world/" data-id="cj3jltsml00013ils57845yxm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,7 +182,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -211,7 +207,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Dan Zera<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
