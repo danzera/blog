@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>C# Environment Setup | DzCode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="C# / .NET Application Environment Setup with Visual Studio CodeBrief overview: .NET is a framework included with Visual Studio Code (VS Code) that provides a variety of services/interfaces. C# is a la">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C# Environment Setup">
+<meta property="og:url" content="https://danzera.github.io/hexo-blog/2017/06/17/c-sharp-environment-setup/index.html">
+<meta property="og:site_name" content="DzCode">
+<meta property="og:description" content="C# / .NET Application Environment Setup with Visual Studio CodeBrief overview: .NET is a framework included with Visual Studio Code (VS Code) that provides a variety of services/interfaces. C# is a la">
+<meta property="og:updated_time" content="2017-06-17T19:03:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C# Environment Setup">
+<meta name="twitter:description" content="C# / .NET Application Environment Setup with Visual Studio CodeBrief overview: .NET is a framework included with Visual Studio Code (VS Code) that provides a variety of services/interfaces. C# is a la">
+  
+    <link rel="alternate" href="/atom.xml" title="DzCode" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/hexo-blog/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/hexo-blog/" id="logo">DzCode</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/hexo-blog/">Home</a>
+        
+          <a class="main-nav-link" href="/hexo-blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://danzera.github.io/hexo-blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-c-sharp-environment-setup" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo-blog/2017/06/17/c-sharp-environment-setup/" class="article-date">
+  <time datetime="2017-06-17T18:04:14.000Z" itemprop="datePublished">2017-06-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      C# Environment Setup
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="C-NET-Application-Environment-Setup-with-Visual-Studio-Code"><a href="#C-NET-Application-Environment-Setup-with-Visual-Studio-Code" class="headerlink" title="C# / .NET Application Environment Setup with Visual Studio Code"></a>C# / .NET Application Environment Setup with Visual Studio Code</h1><p>Brief overview: .NET is a framework included with Visual Studio Code (VS Code) that provides a variety of services/interfaces. C# is a language that applications can be written in. VS Code runs C# applications on top of the .NET framework.</p>
+<h2 id="Download-Visual-Studio-Code-and-the-C-Extension"><a href="#Download-Visual-Studio-Code-and-the-C-Extension" class="headerlink" title="Download Visual Studio Code and the C# Extension"></a>Download Visual Studio Code and the C# Extension</h2><p>Navigate <a href="https://code.visualstudio.com/download" target="_blank" rel="external">here</a> to download and install VS Code.</p>
+<p>Once VS Code has been installed on your machine, open it up and click the square-like icon on the left-hand side of the window. Search for ‘C#’ in the search bar that pops out, then click to install the extension (it should be the first on the list). You may need to restart VS Code to enable it.</p>
+<h2 id="Install-NET-Core"><a href="#Install-NET-Core" class="headerlink" title="Install .NET Core"></a>Install .NET Core</h2><p>Follow the instructions <a href="https://www.microsoft.com/net/core#macos" target="_blank" rel="external">here</a> to install .NET Core.</p>
+<p>NOTE: If you’re running macOS Sierra, you may encounter an error at Step 3 of their instructions. If you get a message in Terminal that says <a href="https://github.com/dotnet/core/blob/master/cli/known-issues.md#users-of-zsh-z-shell-dont-get-dotnet-on-the-path-after-install" target="_blank" rel="external">“dotnet: command not found”</a>, run the following command:</p>
+<figure class="highlight plain"><figcaption><span>-s</span><a href="/usr/local/share/dotnet/dotnet">/usr/local/bin```</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">You should then be able to run through Step 3 of their instructions to produce the &quot;Hello World!&quot; output in your Terminal window.</div><div class="line"></div><div class="line">## Try Running &quot;Hello, World!&quot; in VS Code</div><div class="line"></div><div class="line">Open up VS Code and the &apos;hwapp&apos; project folder that was just generated in the previous step - this can either be done from the VS Code menu or by running the command ```code .``` in Terminal after navigating into the &apos;hwapp&apos; directory.</div><div class="line"></div><div class="line">Once the project folder is open in VS Code, select &apos;Debug &gt; Start Without Debugging&apos; from navigation bar at the top of your screen and select &apos;.NET Core&apos; from the dropdown that appears. This will generate a .vscode/ folder within your project and a launch.json file within that folder.</div><div class="line"></div><div class="line">Open that launch.json file and change the value of the &quot;program&quot; key. By default it reads:</div><div class="line"></div><div class="line">```&quot;program&quot;: &quot;$&#123;workspaceRoot&#125;/bin/Debug/&lt;target-framework&gt;/&lt;project-name.dll&gt;&quot;,</div></pre></td></tr></table></figure>
+<p><code>&lt;target-framework&gt;/&lt;project-name.dll&gt;</code> is a placeholder, and needs to be replaced by the path to the project’s dll file. In this case <code>netcoreapp1.1/hwapp.dll</code>.</p>
+<p>Once this is complete, select ‘Debug &gt; Start Without Debugging’ from navigation bar at the top of your screen again. An error may pop-up that says “Could not find preLaunchTask ‘build’.” If this occurs, select ‘Configure Task Runner’ from the options provided and select ‘.NET Core’ from the dropdown that appears. This generates a tasks.json file.</p>
+<p>After the tasks.json file has been generated, you can then select ‘Debug &gt; Start Without Debugging’ from navigation bar at the top of your screen one last time, which will build/run the application. Click the icons in the bottom left of your VS Code window (an ‘x’ within a circle and the caution symbol) and open the ‘DEBUG CONSOLE’ to see your application’s output. Assuming you see the message “Hello World!”, you now have VS Code properly setup to build C# / .NET applications. Congratulations!</p>
+<h2 id="BONUS-Want-3-months-free-on-Pluarlsight"><a href="#BONUS-Want-3-months-free-on-Pluarlsight" class="headerlink" title="BONUS: Want 3 months free on Pluarlsight?"></a>BONUS: Want 3 months free on <a href="https://www.pluralsight.com/" target="_blank" rel="external">Pluarlsight</a>?</h2><p>To get 3 free months of access to all of Pluarlsight’s content, amongst other benefits, visit <a href="https://my.visualstudio.com" target="_blank" rel="external">My Visual Studio</a> and click ‘Create a new Microsoft Account’ (assuming you don’t already have one).</p>
+<p>After you’re signed up, navigate back to <a href="https://my.visualstudio.com" target="_blank" rel="external">My Visual Studio</a> which displays a list of ‘Visual Studio Dev Essentials’. Find the Pluarlsight link under the ‘Education’ section to get your free 3 month subscription.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://danzera.github.io/hexo-blog/2017/06/17/c-sharp-environment-setup/" data-id="cj41njuuy0000mvlsx4ntraki" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/hexo-blog/2017/06/04/eslint-install/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ESLint</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo-blog/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/hexo-blog/2017/06/17/c-sharp-environment-setup/">C# Environment Setup</a>
+          </li>
+        
+          <li>
+            <a href="/hexo-blog/2017/06/04/eslint-install/">ESLint</a>
+          </li>
+        
+          <li>
+            <a href="/hexo-blog/2017/06/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Dan Zera<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/hexo-blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/hexo-blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/hexo-blog/fancybox/jquery.fancybox.css">
+  <script src="/hexo-blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/hexo-blog/js/script.js"></script>
+
+  </div>
+</body>
+</html>
